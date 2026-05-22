@@ -30,7 +30,8 @@ A custom PCB controller for a DIY pen plotter, designed in KiCad. The board driv
 | Rail | Source | Consumers |
 |------|--------|-----------|
 | 24V | External transformer (DC jack) | TMC2209 motor voltage, fan |
-| 5V | Buck converter breakout | ESP32, servo, buzzer, LCD, encoder |
+| 5V | Buck converter breakout | ESP32, servo, buzzer, LCD |
+| 3.3V | LDO of ESP32 | TMC2209 logic voltage, Rortary encoder|
 
 ## Hardware
 
@@ -40,23 +41,5 @@ A custom PCB controller for a DIY pen plotter, designed in KiCad. The board driv
 | TMC2209 (×2) | Stepper drivers with UART, stealthChop, stallGuard |
 | SG90 | Servo for pen lift mechanism |
 | Buck converter | 24V → 5V step-down |
-| LCD | I2C character or graphic display (via connector) |
-| Rotary encoder | For manual jog / menu navigation (via connector) |
-
-## Getting Started
-
-### Requirements
-
-- [KiCad](https://www.kicad.org/) 7 or later to open the project files
-
-### Opening the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/pen-plotter-controller.git
-   ```
-2. Open `pen-plotter-controller.kicad_pro` in KiCad
-
-## Manufacturing
-
-Gerber files for PCB fabrication are in the `gerbers/` folder, ready to send to a fab house (JLCPCB, PCBWay, etc.).
+| LCD | I2C character or graphic display |
+| Rotary encoder | For manual jog / menu navigation |
