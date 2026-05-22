@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Project_Breakouts")(type "KiCad")(uri "${KIPRJMOD}/Project_Breakouts.kicad_sym")(options "")(descr ""))
+)
