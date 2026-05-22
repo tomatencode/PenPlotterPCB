@@ -57,25 +57,6 @@ A custom PCB controller for a DIY pen plotter, designed in KiCad. The board driv
    ```
 2. Open `pen-plotter-controller.kicad_pro` in KiCad
 
-### 3D Models
-
-The project uses KiCad's standard 3D model library. Custom `.step` files are included in the `3dmodels/` folder. To use them, add the folder path as an environment variable in KiCad under **Preferences → Configure Paths**:
-
-| Name | Path |
-|------|------|
-| `PEN_PLOTTER_3DMODELS` | `path/to/repo/3dmodels` |
-
-## Repository Structure
-
-```
-├── pen-plotter-controller.kicad_pro   # KiCad project file
-├── pen-plotter-controller.kicad_sch   # Schematic
-├── pen-plotter-controller.kicad_pcb   # PCB layout
-├── gerbers/                           # Fabrication files
-├── 3dmodels/                          # Custom .step files
-└── images/                            # Screenshots for this README
-```
-
 ## Manufacturing
 
 Gerber files for PCB fabrication are in the `gerbers/` folder, ready to send to a fab house (JLCPCB, PCBWay, etc.).
